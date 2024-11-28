@@ -26,15 +26,132 @@
         <a href="checkout.html"><i class="fa-solid fa-basket-shopping" aria-label="Handlekurv"></i></a>
     </header>
     
-    <!--brødsmulemeny-->
-    <nav class="brødsmulemeny">
-        <ol>
-            <li class="smule"><a href="index.html">Hjem</a></li>
-            <li class="smule"><a href="index.html/popKat">Kategori</a></li>
-            <li class="smule"><a href="product.html">Product</a></li>
-        </ol>
-    </nav>
+    <main>
+        <!--brødsmulemeny-->
+        <nav class="brødsmulemeny">
+            <ol>
+                <li class="smule"><a href="index.html">Hjem</a></li>
+                <li class="smule"><a href="index.html/popKat">Kategori</a></li>
+                <li class="smule"><a href="product.html">Product</a></li>
+            </ol>
+        </nav>
 
-    <!-- FOOTER GOES HERE -->
+        <!--produktoversikt-->
+        <section class="produktoversikt">
+            <img class="large-image" src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Hovedbilde av produkt -->
+            <img class="small-image" src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+            <img class="small-image" src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+            <img class="small-image" src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+            <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking av det aktuelle produktet-->
+            <h2>Produktnavn</h2> <!-- Produktnavn -->
+            <a href="index.html">Merke</a> <!-- Merkeinformasjon -->
+            <a href="#">Farge</a> <!-- Fargeinformasjon -->
+            <p id="pris">999 NOK</p> <!-- Prisinformasjon -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisl dolor, lobortis vitae nibh ut, tempor suscipit urna. Praesent mollis bibendum tortor interdum ullamcorper.</p>
+        </section>
+
+        <!--relaterte produkter-->
+        <aside>
+            <article class="produkt">
+                <a href="product.html">
+                    <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking -->
+                    <img src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+                </a>
+                <ul>
+                    <li><a href="#index.html" class="merke">Merke</a></li> <!-- Merket for produktet -->
+                    <li><h3>Produktnavn</h3></li> <!-- Navn på produktet -->
+                    <li class="price">Kr 999</li> <!-- Prisinformasjon -->
+                </ul>
+            </article>
+            <article class="produkt">
+                <a href="product.html">
+                    <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking -->
+                    <img src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+                </a>
+                <ul>
+                    <li><a href="#index.html" class="merke">Merke</a></li> <!-- Merket for produktet -->
+                    <li><h3>Produktnavn</h3></li> <!-- Navn på produktet -->
+                    <li class="price">Kr 999</li> <!-- Prisinformasjon -->
+                </ul>
+            </article>
+            <article class="produkt">
+                <a href="product.html">
+                    <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking -->
+                    <img src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+                </a>
+                <ul>
+                    <li><a href="#index.html" class="merke">Merke</a></li> <!-- Merket for produktet -->
+                    <li><h3>Produktnavn</h3></li> <!-- Navn på produktet -->
+                    <li class="price">Kr 999</li> <!-- Prisinformasjon -->
+                </ul>
+            </article>
+            <article class="produkt">
+                <a href="product.html">
+                    <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking -->
+                    <img src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+                </a>
+                <ul>
+                    <li><a href="#index.html" class="merke">Merke</a></li> <!-- Merket for produktet -->
+                    <li><h3>Produktnavn</h3></li> <!-- Navn på produktet -->
+                    <li class="price">Kr 999</li> <!-- Prisinformasjon -->
+                </ul>
+            </article>
+        </aside>
+    </main>
+
+    <!-- global footer -->
+    <footer id="footer">
+        <section><!--Logo og ingress-->
+            <a href="index.html" class="logo"><img src="https://picsum.photos/400/400" alt="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section> 
+        <section> <!-- Kontaktinfo -->
+            <h4>Kontakt</h4>
+            <i class="fa-solid fa-map" aria-label="adresse-ikon"></i><p> B R A Veien 4, 1757 Halden</p>
+            <i class="fa-solid fa-phone" aria-label="telefon-ikon"></i><p> 69 60 80 00</p>
+            <i class="fa-solid fa-envelope" aria-label="epost-ikon"></i><p> halden@hiof.no</p>
+            <i class="fa-solid fa-clock" aria-label="åpningstid-ikon"></i><p> 08:00 - 17:00</p> 
+        </section> 
+        <section> <!-- Snarveier -->
+            <h4>Snarveier</h4>
+            <nav>
+                <a href="index.html"> Hjem</a> <!-- Link tilbake til hovedside -->
+                <a href="#popProd"> Populære produkter</a> <!-- Link til seksjonen med populære produkter -->
+                <a href="#popCat"> Populære kategorier</a> <!-- Link til seksjonen med populære kategorier -->                    
+                <a href="#reviews"> Anmeldelser</a> <!-- Link til seksjonen med anmeldelser -->
+                <a href="checkout.html"> Handlekurv</a> <!-- Link til handlekurv -->
+                <a href="#"> Tilgjengelighetserklæring</a> <!-- Tilgjengelighetserklæring -->
+            </nav>
+        </section> 
+        <section id="some"> 
+            <h4>Sosiale medier</h4>
+            <ul> 
+                <!-- Facebook-ikon med link -->
+                <li>
+                    <a href="facebook.com">
+                        <i class="fa-brands fa-facebook-f" aria-label="Facebook-ikon"></i>
+                    </a>
+                </li> 
+                <!-- Instagram-ikon med link -->
+                <li>
+                    <a href="instagram.com">
+                        <i class="fa-brands fa-instagram" aria-label="Instagram-ikon"></i> 
+                    </a>
+                </li>
+                <!-- Linkedin-ikon -->
+                <li>
+                    <a href="linkedin.com">
+                        <i class="fa-brands fa-linkedin" aria-label="Linkedin-ikon"></i>                        
+                    </a>
+                </li> 
+                <!-- Pinterest-ikon -->
+                <li>
+                    <a href="pinterest.com">
+                        <i class="fa-brands fa-pinterest-p" aria-label="Pinterest-ikon"></i>
+                    </a>
+                </li> 
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>

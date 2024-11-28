@@ -10,6 +10,152 @@
     <link rel="stylesheet" href="css/main.css"> <!-- Kobler til main CSS-fil -->
 </head>
 <body>
+    <!-- Global header med søkefelt, navigasjon og ikon -->
+    <header>
+        <form id="søkefelt"> 
+            <input type="search" placeholder="søk etter dine nye favoritter...">
+            <input type="submit" value="søk">
+        </form>
+        <nav id="meny">
+            <a href="index.html">Hjem</a> <!-- Link til hovedsiden -->
+            <a href="index.html#popProd">Produkter</a> <!-- Link til populære produkter -->
+            <a href="index.html" class="logo"><img src="https://picsum.photos/400/400" alt="logo"></a> <!-- Link til hovedsiden -->
+            <a href="index.html#popKat">Kategorier</a> <!-- Link til populære kategorier -->
+            <a href="#footer">Kontakt oss</a> <!-- Link til footer -->
+        </nav>
+        <a href="checkout.html"><i class="fa-solid fa-basket-shopping" aria-label="Handlekurv"></i></a>
+    </header>
     
+    <main>
+        <section id=top class="cart">
+            <h2>Din handlekurv</h2>
+            <article class="produkt">
+                <a href="product.html">
+                <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking -->
+                <img src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+                </a>
+                <ul>
+                    <li><a href="#index.html" class="merke">Merke</a></li> <!-- Merket for produktet -->
+                    <li><p>Farge: blå</p></li>
+                    <li><h3>Produktnavn</h3></li> <!-- Navn på produktet -->
+                    <li class="price">Kr 999</li> <!-- Prisinformasjon -->
+                </ul>
+            </article>
+            <article class="produkt">
+                <a href="product.html">
+                <i class="fa-solid fa-heart"></i> <!-- Hjerte for favorittmerking -->
+                <img src="https://picsum.photos/400/400" alt="produktbilde"> <!-- Bilde av produkt -->
+                </a>
+                <ul>
+                    <li><a href="#index.html" class="merke">Merke</a></li> <!-- Merket for produktet -->
+                    <li><p>Farge: blå</p></li>
+                    <li><h3>Produktnavn</h3></li> <!-- Navn på produktet -->
+                    <li class="price">Kr 999</li> <!-- Prisinformasjon -->
+                </ul>
+            </article>
+        </section>
+
+        <form class="#betalingsskjemaer">
+            <h3>Personopplysninger</h3>
+            <label for="fornavn">Fornavn:</label>
+            <input id="fornavn" type="text" placeholder="Ola" required>
+            <label for="etternavn">Etternavn:</label>
+            <input id="etternavn" type="text" placeholder="Nordmann" required>
+            <label for="adresse">Adresse:</label>
+            <input id="adresse" type="text" placeholder="Oslogata 1" required>
+            <label for="postnr">Postnr:</label>
+            <input id="postnr" type="text" inputmode="numeric" placeholder="1111" required>
+            <label for="poststed">Poststed:</label>
+            <input type="text" placeholder="Oslo" required>
+            <input type="reset" value="Angre" name="Angre">
+            <input type="submit" value="Lagre personopplysninger" name="Lagre personopplysninger">
+        </form>
+    
+        <form class="#betalingsskjemaer">
+            <h3>Levering</h3>
+            <input type="radio" id="express" name="levering" value="ekspresslevering hjem">
+            <label for="express">ekspresslevering hjem</label>
+            <input type="radio" id="utlevering" name="levering" value="ekspresspakke til utleveringssted">
+            <label for="utlevering">ekspresspakke til utleveringssted</label>
+            <input type="radio" id="standard" name="levering" value="standard hjemlevering">
+            <label for="standard">standard hjemlevering</label>
+            <input type="reset" value="Angre" name="Angre">
+            <input type="submit" value="Lagre levering" name="Lagre levering">
+        </form>
+    
+        <form class="#betalingsskjemaer">
+            <h3>Betaling</h3>
+            <label for="kortnr">Kortnummer: </label>
+            <input id="kortnr" type="text" inputmode="numeric" placeholder="#### #### #### ####" minlength="16" maxlength="16" pattern="\d{16}" required>
+            <label for="utløpsdato">Utløpsdato: </label>
+            <input in="utløpsdato" type="month" required>
+            <label for="CVVCVC">CVV/CVC: </label>
+            <input id="CVVCVC" type="numeric" placeholder="***" minlength="3" maxlength="4" required>
+            <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+            <input type="checkbox" id="samtykke" name="samtykke" value="samtykke" required>
+            <label for="samtykke">ja, jeg godtar vilkårene</label>
+            <input type="checkbox" id="markedsføring" name="markedsføring" value="markedsføring">
+            <label for="markedsføring">Ja takk! Send nyhetsbrev til meg</label>
+            <input type="reset" value="Angre" name="Angre">
+            <input type="submit" value="Lagre betalingsinformasjon">
+            <p>Å betale inkl. MVA</p>
+            <p id="pris">1998 NOK</p>
+        </form>
+    </main>
+
+    <!-- global footer -->
+    <footer id="footer">
+        <section><!--Logo og ingress-->
+            <a href="index.html" class="logo"><img src="https://picsum.photos/400/400" alt="logo"></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section> 
+        <section> <!-- Kontaktinfo -->
+            <h4>Kontakt</h4>
+            <i class="fa-solid fa-map" aria-label="adresse-ikon"></i><p> B R A Veien 4, 1757 Halden</p>
+            <i class="fa-solid fa-phone" aria-label="telefon-ikon"></i><p> 69 60 80 00</p>
+            <i class="fa-solid fa-envelope" aria-label="epost-ikon"></i><p> halden@hiof.no</p>
+            <i class="fa-solid fa-clock" aria-label="åpningstid-ikon"></i><p> 08:00 - 17:00</p> 
+        </section> 
+        <section> <!-- Snarveier -->
+            <h4>Snarveier</h4>
+            <nav>
+                <a href="index.html"> Hjem</a> <!-- Link tilbake til hovedside -->
+                <a href="#popProd"> Populære produkter</a> <!-- Link til seksjonen med populære produkter -->
+                <a href="#popCat"> Populære kategorier</a> <!-- Link til seksjonen med populære kategorier -->                    
+                <a href="#reviews"> Anmeldelser</a> <!-- Link til seksjonen med anmeldelser -->
+                <a href="checkout.html"> Handlekurv</a> <!-- Link til handlekurv -->
+                <a href="#"> Tilgjengelighetserklæring</a> <!-- Tilgjengelighetserklæring -->
+            </nav>
+        </section> 
+        <section id="some"> 
+            <h4>Sosiale medier</h4>
+            <ul> 
+                <!-- Facebook-ikon med link -->
+                <li>
+                    <a href="facebook.com">
+                        <i class="fa-brands fa-facebook-f" aria-label="Facebook-ikon"></i>
+                    </a>
+                </li> 
+                <!-- Instagram-ikon med link -->
+                <li>
+                    <a href="instagram.com">
+                        <i class="fa-brands fa-instagram" aria-label="Instagram-ikon"></i> 
+                    </a>
+                </li>
+                <!-- Linkedin-ikon -->
+                <li>
+                    <a href="linkedin.com">
+                        <i class="fa-brands fa-linkedin" aria-label="Linkedin-ikon"></i>                        
+                    </a>
+                </li> 
+                <!-- Pinterest-ikon -->
+                <li>
+                    <a href="pinterest.com">
+                        <i class="fa-brands fa-pinterest-p" aria-label="Pinterest-ikon"></i>
+                    </a>
+                </li> 
+            </ul>
+        </section>
+    </footer>    
 </body>
 </html>
