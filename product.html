@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,23 @@
     <link rel="stylesheet" href="css/main.css"> <!-- Kobler til main CSS-fil -->
 </head>
 <body>
-    <!-- HEADER GOES HERE -->
-
+    <!-- Global header med søkefelt, navigasjon og ikon -->
+    <header>
+        <form id="søkefelt"> 
+            <input type="search" placeholder="søk etter dine nye favoritter...">
+            <input type="submit" value="søk">
+        </form>
+        <nav id="meny">
+            <a href="index.html">Hjem</a> <!-- Link til hovedsiden -->
+            <a href="index.html#popProd">Produkter</a> <!-- Link til populære produkter -->
+            <a href="index.html" class="logo"><img src="https://picsum.photos/400/400" alt="logo"></a> <!-- Link til hovedsiden -->
+            <a href="index.html#popKat">Kategorier</a> <!-- Link til populære kategorier -->
+            <a href="#footer">Kontakt oss</a> <!-- Link til footer -->
+        </nav>
+        <a href="checkout.html"><i class="fa-solid fa-basket-shopping" aria-label="Handlekurv"></i></a>
+    </header>
+    
+    <!--brødsmulemeny-->
     <nav class="brødsmulemeny">
         <ol>
             <li class="smule"><a href="index.html">Hjem</a></li>
@@ -19,5 +34,7 @@
             <li class="smule"><a href="product.html">Product</a></li>
         </ol>
     </nav>
+
+    <!-- FOOTER GOES HERE -->
 </body>
 </html>

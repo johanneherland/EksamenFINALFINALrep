@@ -10,3 +10,12 @@ nav {
     flex-wrap: wrap;
 }
 
+button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
